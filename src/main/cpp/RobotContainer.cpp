@@ -1,0 +1,25 @@
+// Copyright (c) FIRST and other WPILib contributors.
+// Open Source Software; you can modify and/or share it under the terms of
+// the WPILib BSD license file in the root directory of this project.
+
+#include "RobotContainer.h"
+
+#include <frc2/command/Commands.h>
+
+#include <iostream>
+
+RobotContainer::RobotContainer():
+    joy_(0)
+{
+    ConfigureBindings();
+}
+
+void RobotContainer::ConfigureBindings()
+{
+    drive_base_.SetDefaultCommand(drive_base_.ArcadeCommand(joy_));
+}
+
+frc2::CommandPtr RobotContainer::GetAutonomousCommand()
+{
+    return frc2::cmd::Print("No autonomous command configured");
+}

@@ -1,0 +1,107 @@
+{
+  "HALProvider": {
+    "Other Devices": {
+      "Talon FX[0]": {
+        "header": {
+          "open": true
+        }
+      },
+      "Talon FX[0]/Integrated Sensor": {
+        "header": {
+          "open": true
+        }
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/LiveWindow/Ungrouped/DriveBase": "Subsystem",
+      "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/LiveWindow/Ungrouped/Talon FX [0]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [1]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [2]": "Motor Controller",
+      "/LiveWindow/Ungrouped/Talon FX [3]": "Motor Controller",
+      "/LiveWindow/Ungrouped/class frc2::SubsystemBase": "Subsystem",
+      "/LiveWindow/Ungrouped/left_follower": "Motor Controller",
+      "/LiveWindow/Ungrouped/left_master": "Motor Controller",
+      "/LiveWindow/Ungrouped/right_follower": "Motor Controller",
+      "/LiveWindow/Ungrouped/right_master": "Motor Controller",
+      "/SmartDashboard/Sim Field": "Field2d",
+      "/SmartDashboard/drive_pid": "PIDController"
+    },
+    "windows": {
+      "/SmartDashboard/Sim Field": {
+        "window": {
+          "visible": true
+        }
+      }
+    }
+  },
+  "NetworkTables": {
+    "Persistent Values": {
+      "open": false
+    },
+    "Retained Values": {
+      "open": false
+    },
+    "transitory": {
+      "LiveWindow": {
+        "Ungrouped": {
+          "open": true
+        }
+      },
+      "SmartDashboard": {
+        "drive_pid": {
+          "open": true
+        },
+        "open": true
+      }
+    }
+  },
+  "NetworkTables Info": {
+    "Server": {
+      "open": true
+    }
+  },
+  "Plot": {
+    "Plot <0>": {
+      "plots": [
+        {
+          "height": 340,
+          "series": [
+            {
+              "color": [
+                0.2980392277240753,
+                0.44705885648727417,
+                0.6901960968971252,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/left target vel"
+            },
+            {
+              "color": [
+                0.8666667342185974,
+                0.5176470875740051,
+                0.32156863808631897,
+                1.0
+              ],
+              "id": "NT:/SmartDashboard/left vel"
+            },
+            {
+              "color": [
+                0.3333333432674408,
+                0.658823549747467,
+                0.4078431725502014,
+                1.0
+              ],
+              "id": "CANMotor:Talon FX[0]-percentOutput",
+              "yAxis": 1
+            }
+          ],
+          "yaxis2": true
+        }
+      ]
+    }
+  }
+}
