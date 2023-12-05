@@ -79,6 +79,8 @@ DriveBase::DriveBase():
 
     frc::SmartDashboard::PutData("Sim Field", &sim_field_);
     gyro_.ZeroYaw();
+
+    std::cout << "DriveBase Constructor Complete!" << std::endl;
 }
 
 void DriveBase::Reconfigure()
