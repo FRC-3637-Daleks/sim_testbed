@@ -9,7 +9,7 @@
 #include <iostream>
 
 RobotContainer::RobotContainer():
-    joy_(0)
+    joy_(1)
 {
     ConfigureBindings();
 }
